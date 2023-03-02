@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/9.17.1/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/9.17.1/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/9.17.1/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/9.17.1/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/9.17.1/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/9.17.1/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/9.17.1/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/9.17.1/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/9.17.1/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/9.17.1/firebase-performance-compat.js"></script>
+    <script defer src="/__/firebase/9.17.1/firebase-firestore.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- 
+        initialize the SDK after all desired features are loaded, set useEmulator to false
+        to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+</head>
+<body>
+
+
+    <input type="hidden" id="userIDses" class="userIDses" name="userIDses">
+
+    <h1>Teszt</h1>
+    <h3 id="counter"><span id="counter"></span></h3>
+
+    <!-- <img class="img" src="pics/1.png" alt="Girl in a jacket"> -->
+    <img class="img" id="image" src="image" alt="Girl in a jacket">
+
+    <div class="h4text">
+        <h4>Mennyire boldog ez az ember?</h4>
+    </div>
+
+    <div class="button-div">
+        <button class="button" id="answer" type="submit" value="1" onclick="test(this.value)">1</button>
+        <button class="button" id="answer" type="submit" value="2" onclick="test(this.value)">2</button>
+        <button class="button" id="answer" type="submit" value="3" onclick="test(this.value)">3</button>
+        <button class="button" id="answer" type="submit" value="4" onclick="test(this.value)">4</button>
+        <button class="button" id="answer" type="submit" value="5" onclick="test(this.value)">5</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
